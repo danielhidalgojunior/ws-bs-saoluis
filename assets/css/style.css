@@ -147,6 +147,37 @@ a.article, a.article:hover {
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
+
+
+.list-image {
+    margin-right: 24px;
+    height: 86px;
+    width: 86px;
+}
+
+.list-item {
+    min-height: 128px;
+    margin: 8px;
+}
+
+.list-item-inside {
+    padding: 16px;
+}
+
+.btn {
+    padding: 4px;
+    margin-bottom: 2px;
+}
+
+.list-item-buttons-div {
+    float: right;
+    display: grid;
+}
+
+.list-content {
+    display: inline;
+}
+
 #content {
     width: 100%;
     padding: 20px;

@@ -11,7 +11,7 @@
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <!-- Font Awesome JS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
@@ -29,11 +29,11 @@
 
             <ul class="list-unstyled components">
                 <p>Painel de controle</p>
-                <li class="active">
-                    <a href="index.html">Página inicial</a>
-                </li>
                 <li>
-                    <a href="pages/products.html">Produtos</a>
+                    <a href="../index.html">Página inicial</a>
+                </li>
+                <li class="active">
+                    <a href="../pages/products.html">Produtos</a>
                 </li>
                 <li>
                     <a href="#">Relatórios</a>
@@ -62,18 +62,25 @@
                     </button>
         
                     <div>
-                        <h4>Página inicial</h4>
+                        <h4>Controle de produtos</h4>
                     </div>
                 </div>
             </nav>
-            <div>
-                <h2>Collapsible Sidebar Using Bootstrap 4</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    
-                <div class="line"></div>
             
-                <h3>Lorem Ipsum Dolor</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>        
+            <div>
+                <div class="row list-item">
+                    <div class="border border-secundary rounded col-sm-12 list-item-inside">
+                        <div>
+                            <img class="list-image" src="https://http2.mlstatic.com/processador-intel-core-i7-6700-lga-1151-8mb-cache-40ghz-box-D_NQ_NP_120911-MLB20663465170_042016-O.webp" class="thumbnail rounded-circle" alt="">
+                            <span>Ryzen 7 2700x AW3ABF23GQRS23</span>
+
+                            <div class="list-item-buttons-div">
+                                    <a class="btn btn-success" href="#">Adicionar</a>
+                                    <a class="btn btn-info" href="#">Editar</a>
+                                    <a class="btn btn-danger" href="#">Remover</a>
+                            </div>
+                        </div>
+                    </div>
             </div>
         </div>
 
