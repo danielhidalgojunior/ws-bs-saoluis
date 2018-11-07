@@ -20,7 +20,41 @@
 
 <body>
 
-  <div class="modal" id="myModal">
+    <div class="modal" id="insertModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+    
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Cadastrar novo produto</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+    
+            <!-- Modal body -->
+            <div class="modal-body">
+                <form>
+                <div class="form-group">
+                    <label for="addname">Nome do produto:</label>
+                    <input type="text" class="form-control" id="addname" placeholder="Exemplo: Roteador TPLink 3 antenas 3HDGFGRH34" name="addname">
+                </div>
+                <div class="form-group">
+                    <label for="addimg">URL da imagem:</label>
+                    <input type="text" class="form-control" id="addimg" placeholder="Exemplo: https://www.google.com.br/imagem.png" name="addimg">
+                </div>
+                </form>
+            </div>
+    
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal" onclick="insertProduct()">Adicionar</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+            </div>
+    
+            </div>
+        </div>
+    </div>
+
+  <div class="modal" id="editModal">
     <div class="modal-dialog">
       <div class="modal-content">
 
@@ -32,7 +66,11 @@
 
         <!-- Modal body -->
         <div class="modal-body">
-          <form action="/action_page.php">
+          <form>
+            <div class="form-group">
+                <label for="id">Código:</label>
+                <input type="text" class="form-control" id="id" name="id" readonly>
+            </div>
             <div class="form-group">
               <label for="name">Nome do produto:</label>
               <input type="text" class="form-control" id="name" placeholder="Exemplo: Roteador TPLink 3 antenas 3HDGFGRH34" name="name">
@@ -46,7 +84,7 @@
 
         <!-- Modal footer -->
         <div class="modal-footer">
-          <button type="button" class="btn btn-info">Salvar</button>
+          <button type="button" class="btn btn-info" data-dismiss="modal" onclick="editProduct()">Salvar</button>
           <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
         </div>
 
@@ -101,10 +139,13 @@
                 </div>
             </nav>
 
+            <div class="clearfix" style="margin:10px">
+                <button type="button" style="padding:10px" data-toggle="modal" data-target="#insertModal" class="btn btn-success float-right">Adicionar</button>
+            </div>
+            <br>
             <div id="listing">
 
             </div>
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
