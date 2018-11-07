@@ -107,9 +107,6 @@
                 <li class="active">
                     <a href="../pages/products.html">Produtos</a>
                 </li>
-                <li>
-                    <a href="#">Relatórios</a>
-                </li>
             </ul>
 
             <ul class="list-unstyled CTAs">
@@ -140,6 +137,7 @@
             </nav>
 
             <div class="clearfix" style="margin:10px">
+                <h4 class="float-left">Produtos cadastrados</h4>
                 <button type="button" style="padding:10px" data-toggle="modal" data-target="#insertModal" class="btn btn-success float-right">Adicionar</button>
             </div>
             <br>
@@ -157,6 +155,11 @@
                 $('#sidebar').toggleClass('active');
                 $(this).toggleClass('active');
             });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("body").addClass('all-loaded');
         });
     </script>
 </body>
