@@ -69,7 +69,7 @@ function populateEditModal(id) {
     $('input[name=maxStorage]').val(maxStorage);
     $('input[name=unitPrice]').val(unitPrice);
     $('input[name=packingType]').val(packingType);
-    $('select[name=active]').val(active ? "Sim" : "Não");
+    $('select[name=active]').val(active);
 }
 
 function removeProduct(id) {
