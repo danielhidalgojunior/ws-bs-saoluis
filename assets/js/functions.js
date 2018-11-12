@@ -12,7 +12,7 @@ function loadDummies() {
         '<img class="list-image" src="' + x.img + '" alt="">' +
         '<span>' + x.name + '</span>' +
         '<div class="list-item-buttons-div">' +
-        '<a class="btn btn-info" style="color:white" data-toggle="modal" data-target="#editModal" onclick="populateEditModal(' + x.id + ')">Editar</a>' +
+        '<a class="btn btn-info" style="color:white" data-toggle="modal" data-target="#editModal" onclick="populateEditModal(' + x.id + ')">Ver/Editar</a>' +
         '<br><br>' +
         '<a class="btn btn-danger" style="color:white" data-toggle="modal" data-target="#removeModal" onclick="removeProduct(' + x.id + ')">Remover</a>' +
         '</div>' +
