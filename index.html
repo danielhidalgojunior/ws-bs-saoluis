@@ -88,10 +88,50 @@
         data: {
           labels: ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"],
           datasets: [{
-            data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
-            lineTension: 0,
+            data: [
+                Math.floor((Math.random(new Date().getTime() / 1000) * 99999) + 1),
+                Math.floor((Math.random(new Date().getTime() / 1000) * 99999) + 1),
+                Math.floor((Math.random(new Date().getTime() / 1000) * 99999) + 1),
+                Math.floor((Math.random(new Date().getTime() / 1000) * 99999) + 1),
+                Math.floor((Math.random(new Date().getTime() / 1000) * 99999) + 1),
+                Math.floor((Math.random(new Date().getTime() / 1000) * 99999) + 1), 
+                Math.floor((Math.random(new Date().getTime() / 1000) * 99999) + 1)
+                ],
+            lineTension: 0.6,
             backgroundColor: 'transparent',
             borderColor: '#ff8544',
+            borderWidth: 4,
+            pointBackgroundColor: '#00'
+          },
+          {
+            data: [
+                Math.floor((Math.random(new Date().getTime() / 1000) * 99999) + 1),
+                Math.floor((Math.random(new Date().getTime() / 1000) * 99999) + 1),
+                Math.floor((Math.random(new Date().getTime() / 1000) * 99999) + 1),
+                Math.floor((Math.random(new Date().getTime() / 1000) * 99999) + 1),
+                Math.floor((Math.random(new Date().getTime() / 1000) * 99999) + 1),
+                Math.floor((Math.random(new Date().getTime() / 1000) * 99999) + 1), 
+                Math.floor((Math.random(new Date().getTime() / 1000) * 99999) + 1)
+                ],
+            lineTension: 0.6,
+            backgroundColor: 'transparent',
+            borderColor: '#ff00ff',
+            borderWidth: 4,
+            pointBackgroundColor: '#00'
+          },
+          {
+            data: [
+                Math.floor((Math.random(new Date().getTime() / 1000) * 99999) + 1),
+                Math.floor((Math.random(new Date().getTime() / 1000) * 99999) + 1),
+                Math.floor((Math.random(new Date().getTime() / 1000) * 99999) + 1),
+                Math.floor((Math.random(new Date().getTime() / 1000) * 99999) + 1),
+                Math.floor((Math.random(new Date().getTime() / 1000) * 99999) + 1),
+                Math.floor((Math.random(new Date().getTime() / 1000) * 99999) + 1), 
+                Math.floor((Math.random(new Date().getTime() / 1000) * 99999) + 1)
+                ],
+            lineTension: 0.6,
+            backgroundColor: 'transparent',
+            borderColor: '#ffff00',
             borderWidth: 4,
             pointBackgroundColor: '#00'
           }]
